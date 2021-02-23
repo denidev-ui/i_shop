@@ -175,7 +175,7 @@
     font-size: 36px;
     line-height: 43.2px;
 }
-.catalog-article-2 >h5{
+.catalog-article-3 >h5{
     color:rgb(119, 119, 119);
     font-size: 14px;
     font-family: roboto , sans-serif;
@@ -190,7 +190,7 @@
     justify-content:flex-start;
     align-items: center;
 }
-.catalog-article-2 {
+.catalog-article-3 {
     display: flex;
     flex-direction: column;
     width:500px;
@@ -220,10 +220,9 @@
     padding:50px;
     justify-content: center;
     align-self: center;
-    margin-bottom: 50px;
 }
 .catalog-article-1{
-    height: 52px;
+    height: 100%;
     width:500px;
     display: flex;
     font-size: 14px;
@@ -234,4 +233,9 @@
 .left-arrow, .right-arrow{
     width:52px;
     height: 26px;
+}
+.left-arrow2, .right-arrow2{
+    height: 0px;
+    height: 0px;
+    visibility: hidden;
 }
