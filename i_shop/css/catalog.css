@@ -239,3 +239,40 @@
     height: 0px;
     visibility: hidden;
 }
+@media (max-width: 450px) {
+    .catalog-top{
+        flex-direction: column;
+    }
+    .catalog-bottom{
+        flex-direction: column;
+    }
+    .container-catalog{
+        height: 100%;
+    }
+    .left-arrow, .right-arrow{
+        visibility: hidden;
+    }
+    .left-arrow2, .right-arrow2{
+        visibility: visible;
+        height: 26px;
+        width: 52px;
+    }
+    .catalog-article-1{
+        flex-direction: column;
+    }
+    .catalog-article-2{
+        display: flex;
+        height: 60px;
+        width: 150px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .catalog-article-3{
+        width: 250px;
+        height: 50px;
+    }
+    .container{
+        justify-content: space-between;
+    }
+}

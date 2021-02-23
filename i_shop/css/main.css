@@ -111,7 +111,7 @@ content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
 }
 .album_overlay {
     width: calc(100% - 360px);
@@ -139,14 +139,14 @@ content {
 .album_big {
     height: 385px;
 }
-.latest_products {
+/* .latest_products {
     width: 1040px;
     height: 450px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 .latest_products > h1 {
     margin-bottom: 5px;
@@ -164,9 +164,18 @@ content {
     margin-bottom: 45px;
 }
 .latest_row {
-    height: 350px;
-    width: 1040px;
-    background: rgb(3, 85, 122);
+    height: 450px;
+    width: 1350px;
+} */
+.exclusive_main_title {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+.exclusive_main_title + span {
+    color: #7777a3;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 .exclusive_propose {
     width: 100%;
@@ -394,4 +403,129 @@ content {
 .deals_column > div > img {
     border-radius: 3px;
     margin-right: 15px;
+}
+.mobile_album {
+    display: none;
+}
+@media (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        padding-top: 0;
+        height: 100%;
+    }
+    content {
+        width: 100%;
+        height: calc(100vh - 160px);
+        padding: 0 15px 0 15px;
+    }
+    .mainscreen + img {
+        display: none;
+    }
+    .maintitle {
+        font-size: 30px;
+        line-height: inherit;
+        margin-bottom: 25px;
+    }
+    .maintitle + span {
+        width: 90vw;
+    }
+    .services {
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        padding-top: 35px;
+    }
+    .service {
+        width: 50%;
+    }
+    .service:first-child, .service:nth-child(2), .service:nth-child(3) {
+        border-right: none;
+    }
+    .mobile_album {
+        height: 220vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sneakers_album {
+        display: none;
+    }
+    .mobile_album > img {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .exclusive_main_title {
+        font-size: 30px;
+    }
+    .exclusive_main_title + span {
+        font-size: 14px;
+        width: 85%;
+        line-height: 23px;
+    }
+    .exclusive_propose {
+        width: 100%;
+        height: 200vh;
+        flex-direction: column;
+    }
+    .exclusive_right, .exclusive_left {
+        width: 100%;
+        height: 100vh;
+    }
+    .exclusive_prev, .exclusive_next {
+        display: none;
+    }
+    .exclusive_shoes > img {
+        width: 90vw;
+    }
+    .exclusive_title {
+        font-size: 18px;
+        width: 95%;
+    }
+   .exclusive_left {
+       background-size: 200%;
+   }
+   .exclusive_left > h1, .exclusive_left > span {
+       text-align: center;
+   }
+   .exclusive_left > span {
+       width: 70%;
+   }
+   .countdown {
+       width: 95%;
+   }
+   .brands {
+       width: 90%;
+        height: 400px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+   }
+   .brands > img:first-child, .brands > img:nth-child(3) {
+       margin-right: 60px;
+   }
+   .deals {
+       height: 155vh;
+       justify-content: flex-start;
+   }
+   .deal_span {
+       width: 80vw;
+       line-height: 24px;
+   }
+   .same_deals {
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+   }
+   .deal_friday {
+       display: none;
+   }
+   .deals_column {
+       margin-left: -60px;
+   }
+   .deals_column > div {
+       margin-bottom: 20px;
+   }
 }
