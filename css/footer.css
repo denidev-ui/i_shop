@@ -137,3 +137,8 @@ footer {
         margin-bottom: 50px;
     }
 }
+@media (width: 320px) {
+    .input_box > input {
+        width: 250px;
+    }
+}
