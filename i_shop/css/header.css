@@ -104,3 +104,9 @@ li {
         margin-bottom: 50px;
     }
 }
+@media (min-width: 450px) and (max-width: 1000px) {
+    header{
+        width: 768px;
+        
+    }
+}

@@ -208,12 +208,20 @@
 .catalog-top {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.i-pad-version{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 .container-catalog {
-    width: 1450px;
-    height: 1000px;
+    width: 1500px;
+    height: 100%;
     background: white;
     display: flex;
     flex-direction: column;
@@ -240,6 +248,9 @@
     visibility: hidden;
 }
 @media (max-width: 450px) {
+    html {
+        overflow-x: hidden;
+    }
     .catalog-top{
         flex-direction: column;
     }
@@ -274,5 +285,46 @@
     }
     .container{
         justify-content: space-between;
+    }
+    .i-pad-version{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+@media (min-width: 450px) and (max-width: 1000px){
+    html {
+        overflow-x: hidden;
+    }
+    .i-pad-version{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .container-catalog{
+        align-items: center;
+        justify-content: center;
+    }
+    .catalog-top{
+        width: 40%;
+        flex-direction: column;
+    }
+    .catalog-bottom{
+        flex-direction: column;
+        width: 40%;
+    }
+    
+}
+@media (width: 1024px){
+    .container-catalog{
+        width: 1500px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8{
+        width: 240px;
+    }
+    .catalog-window-1, .catalog-window-2, .catalog-window-3, .catalog-window-4, .catalog-window-5, .catalog-window-6, .catalog-window-7, .catalog-window-8{
+        width: 220px;
+        margin: 10px 20px 10px 10px;
     }
 }
