@@ -154,6 +154,7 @@ footer {
         margin-left: 20px;
         margin-bottom: 50px;
     }
+
     .input_box > input{
         width: 70%;
     }
@@ -189,3 +190,11 @@ footer {
     }
     
 }
+
+}
+@media (width: 320px) {
+    .input_box > input {
+        width: 250px;
+    }
+}
+
