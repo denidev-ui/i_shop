@@ -107,7 +107,7 @@ li {
     }
 }
 
-<<<<<<< Updated upstream
+
 @media (min-width: 450px) and (max-width: 1000px) {
     header{
         width: 768px;
@@ -123,10 +123,9 @@ li {
     
   }
 
-=======
 @media (width: 1024px) {
     header {
         width: 100%;
     }
 }
->>>>>>> Stashed changes
+
