@@ -49,11 +49,13 @@ li {
 .mobile_menu {
     display: none;
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     header {
         width: 100%;
         height: 60px;
         padding: 0 15px 0 15px;
+        position: sticky;
+        top: 0;
     }
     .right_header {
         display: none;
@@ -105,6 +107,7 @@ li {
     }
 }
 
+<<<<<<< Updated upstream
 @media (min-width: 450px) and (max-width: 1000px) {
     header{
         width: 768px;
@@ -120,3 +123,10 @@ li {
     
   }
 
+=======
+@media (width: 1024px) {
+    header {
+        width: 100%;
+    }
+}
+>>>>>>> Stashed changes

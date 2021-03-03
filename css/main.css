@@ -415,7 +415,7 @@ content {
     display: none;
 }
 @media (max-width: 450px) {
-    body {
+    html {
         overflow-x: hidden;
     }
     .container {
@@ -540,7 +540,10 @@ content {
     }
 }
 /* TABLET*/
-@media (min-width: 450px) and (max-width: 1024px) {
+@media (min-width: 450px) and (max-width: 1000px) {
+    html {
+        overflow-x: hidden;
+    }
     .container {
         padding-top: 0;
         width: 100vw;
@@ -548,6 +551,8 @@ content {
     content {
         justify-content: center;
         width: 100%;
+        height: 50vh;
+        margin-bottom: 50px;
     }
     .mainscreen {
         width: 100%;
@@ -558,536 +563,65 @@ content {
     .mainscreen + img {
         display: none;
     }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 40px;
-}
-
-content {
-    height: 760px;
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
-    margin-bottom: 200px;
-}
-.mainscreen {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-.maintitle {
-    font-size: 56px;
-    font-family: 'Poppins', sans-serif;
-    color: #222222;
-    line-height: 65px;
-    margin-bottom: 35px;
-}
-.maintitle + span {
-    font-size: 14px;
-    color: #959595;
-    line-height: 23px;
-    margin-bottom: 35px;
-}
-.addtobag_main {
-    width: 140px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.plus_button {
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    background: green;
-    outline: none;
-    border: none;
-    font-size: 28px;
-    color: #ffe7c7;
-    background: linear-gradient(to right, #ffb800, #ff7000);
-}
-.plus_button + span {
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-}
-.shoe_img {
-    width: 450px;
-}
-
-/* Services */
-
-.services {
-    width: 1200px;
-    height: 170px;
-    box-shadow: -1px 15px 60px 2px rgba(170, 169, 169, 0.23);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.service {
-    width: 25%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-.service:first-child, .service:nth-child(2), .service:nth-child(3) {
-    border-right: 1px solid #eeeeee;
-}
-.service > img {
-    margin-bottom: 20px;
-}
-.service > h2 {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 3px;
-}
-.service > span {
-    color: #7777a3;
-    font-size: 14px;
-}
-.sneakers_album {
-    width: 1040px;
-    height: 385px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 70px;
-}
-.album_overlay {
-    width: calc(100% - 360px);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.album_first_row {
-    margin-bottom: 30px;
-}
-.album_first_row , .album_second_row {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.album_first_row > img:nth-child(2), .album_second_row > img:first-child {
-    width: 206px;
-}
-.album_first_row > img:first-child, .album_second_row > img:nth-child(2) {
-    width: 440px;
-}
-.album_big {
-    height: 385px;
-}
-/* .latest_products {
-    width: 1040px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 140px;
-}
-.latest_products > h1 {
-    margin-bottom: 5px;
-    color: #222222;
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 100;
-}
-.latest_products > span {
-    line-height: 25px;
-    font-size: 14px;
-    text-align: center;
-    color: #808080;
-    width: 750px;
-    margin-bottom: 45px;
-}
-.latest_row {
-    height: 450px;
-    width: 1350px;
-} */
-.exclusive_main_title {
-    margin-bottom: 10px;
-    font-size: 36px;
-}
-.exclusive_main_title + span {
-    color: #7777a3;
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-.exclusive_propose {
-    width: 100%;
-    height: 835px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 80px;
-}
-.exclusive_left {
-    width: 50%;
-    height: 100%;
-    background-image: url(../img/exclusive.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-.exclusive_left > span {
-    margin-bottom: 30px;
-    font-size: 15px;
-}
-.exclusive_left > h1 {
-    letter-spacing: 2px;
-    font-weight: 900;
-    margin-bottom: 5px;
-}
-.countdown {
-    width: 550px;
-    height: 100px;
-    background: white;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    margin-bottom: 30px;
-}
-.countdown_box {
-    width: 25%;
-    height: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.countdown_box:first-child, .countdown_box:nth-child(2), .countdown_box:nth-child(3) {
-    border-right: 1px solid #eeeeee;
-}
-.countdown_box > span {
-    font-size: 14px;
-}
-.countdown_box > h1 {
-    margin-bottom: 3px;
-}
-.exclusive_button {
-    width: 125px;
-    height: 50px;
-    border-radius: 100px;
-    background: linear-gradient(to right, #ffb800, #ff7000);
-    border: none;
-    outline: none;
-    color: white;
-    font-weight: bolder;
-}
-.exclusive_right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background: #f9f9ff;
-    align-items: center;
-}
-.exclusive_prev, .exclusive_next {
-    width: 100px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.exclusive_prev > img, .exclusive_next > img {
-    opacity: 0.4;
-    cursor: pointer;
-} 
-.exclusive_prev > img:hover, .exclusive_next > img:hover {
-    opacity: 1;
-}
-.exclusive_shoes {
-    width: 650px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.exclusive_price {
-    width: 120px;
-    height: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.exclusive_current, .deal_current {
-    font-weight: bolder;
-    font-size: 14px;
-}
-.exclusive_past, .deal_past {
-    font-weight: bolder;
-    color: #d1d1d2;
-    text-decoration: line-through;
-    font-size: 14px;
-}
-.exclusive_title {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.exclusive_addbag {
-    width: 110px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.exclusive_addbag > div {
-    background: linear-gradient(to right, #ffb800, #ff7000);
-    width: 28px;
-    height: 28px;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.exclusive_addbag > span {
-    font-weight: bolder;
-    font-size: 12px;
-}
-.exclusive_addbag > div > img {
-    filter: brightness(0) invert(1);
-}
-.brands {
-    width: 1040px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 70px;
-}
-.brands > img {
-    opacity: .2;
-    transition: .3s;
-    cursor: pointer;
-}
-.brands > img:hover {
-    opacity: 1;
-}
-.deals {
-    width: 1040px;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.deals > h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.deals > span {
-    font-size: 14px;
-    text-align: center;
-    color: #808080;
-    margin-bottom: 50px;
-}
-.all_deals {
-    width: 1100px;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.same_deals {
-    width: calc(1040px - 235px);
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.same_deals + img {
-    width: 255px;
-}
-.deals_column {
-    width: 280px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.deals_column > div {
-    width: 100%;
-    height: 26%;
-    display: flex;
-}
-.deal_detais {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.deal_price {
-    width: 115px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.deal_detais > span {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-.deals_column > div > img {
-    border-radius: 3px;
-    margin-right: 15px;
-}
-.mobile_album {
-    display: none;
-}
-@media (max-width: 450px) {
-    body {
-        overflow-x: hidden;
-    }
-    .container {
-        padding-top: 0;
-        height: 100%;
-    }
-    content {
-        width: 100%;
-        height: calc(100vh - 160px);
-        padding: 0 15px 0 15px;
-    }
-    .mainscreen + img {
-        display: none;
-    }
-    .maintitle {
-        font-size: 30px;
-        line-height: inherit;
-        margin-bottom: 25px;
-    }
-    .maintitle + span {
-        width: 90vw;
-    }
     .services {
-        flex-direction: column;
-        width: 100%;
-        height: 80vh;
-        padding-top: 35px;
+        width: 95vw;
+        flex-wrap: wrap;
+        height: 300px;
     }
     .service {
         width: 50%;
+        height: 150px;
+        justify-content: center;
     }
-    .service:first-child, .service:nth-child(2), .service:nth-child(3) {
-        border-right: none;
+    .sneakers_album, .album_overlay {
+        width: 89vw;
     }
-    .mobile_album {
-        height: 220vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .sneakers_album {
+    .album_big {
         display: none;
-    }
-    .mobile_album > img {
-        width: 90%;
-        margin-bottom: 30px;
-    }
-    .exclusive_main_title {
-        font-size: 30px;
-    }
-    .exclusive_main_title + span {
-        font-size: 14px;
-        width: 85%;
-        line-height: 23px;
     }
     .exclusive_propose {
-        width: 100%;
-        height: 200vh;
         flex-direction: column;
+        height: 120vh;
+        width: 100vw;
     }
-    .exclusive_right, .exclusive_left {
+    .exclusive_right , .exclusive_left {
         width: 100%;
-        height: 100vh;
     }
-    .exclusive_prev, .exclusive_next {
-        display: none;
-    }
-    .exclusive_shoes > img {
+    .brands {
         width: 90vw;
     }
-    .exclusive_title {
-        font-size: 18px;
-        width: 95%;
+    .brands > img {
+        width: 115px;
     }
-   .exclusive_left {
-       background-size: 200%;
-   }
-   .exclusive_left > h1, .exclusive_left > span {
-       text-align: center;
-   }
-   .exclusive_left > span {
-       width: 70%;
-   }
-   .countdown {
-       width: 95%;
-   }
-   .brands {
-       width: 90%;
-        height: 400px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-   }
-   .brands > img:first-child, .brands > img:nth-child(3) {
-       margin-right: 60px;
-   }
-   .deals {
-       height: 155vh;
-       justify-content: flex-start;
-   }
-   .deal_span {
-       width: 80vw;
-       line-height: 24px;
-   }
-   .same_deals {
-       flex-direction: column;
-       align-items: center;
-       width: 100%;
-   }
-   .deal_friday {
-       display: none;
-   }
-   .deals_column {
-       margin-left: -60px;
-   }
-   .deals_column > div {
-       margin-bottom: 20px;
-   }
+    .all_deals, .same_deals {
+        width: 90vw;
+    }
+    .deal_friday {
+        display: none;
+    }
+}
+@media (width: 1024px) {
+    content, .services, .sneakers_album, .brands, .deals, .all_deals, .deals_column {
+        width: 100%;
+    }
+    .exclusive_left {
+        background-size: 200%;
+    }
+    .exclusive_next, .exclusive_prev {
+        display: none;
+    }
+    .countdown {
+        width: 90%;
+    }
+    .service:first-child, .service:nth-child(2), .service:nth-child(3) {
+        border-right: 1px solid white;
+    }
+}
+@media (max-width: 375px) {
+    .deals {
+        height: 140vh;
+    }
+    .mobile_album {
+        height: 180vh;
+    }
 }
